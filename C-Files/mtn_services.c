@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#define DEBUG
 int main()
 {
 	int amount;
@@ -14,6 +14,7 @@ int main()
 		printf("2. Internet bundle\n");
 		printf("3. Mobile Money transfer\n");
 		printf("4. Check balance\n");
+		#ifdef DEBUG
 		printf("Input : ");
 		scanf("%d",&input);
 	
@@ -50,5 +51,5 @@ int main()
 
 	
 	
-	return 0;
+	#endif
 	}
